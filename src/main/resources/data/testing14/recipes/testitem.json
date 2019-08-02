@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "  #",
+        " # ",
+        "x  "
+    ],
+    "key": {
+        "x": {
+            "item": "testing14:testblock"
+        },
+        "#": {
+            "tag": "minecraft:wool"
+        }
+    },
+    "result": {
+        "item": "testing14:testitem"
+    }
+}
