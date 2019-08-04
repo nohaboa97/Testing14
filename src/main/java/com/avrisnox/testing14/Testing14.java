@@ -2,6 +2,7 @@ package com.avrisnox.testing14;
 
 import com.avrisnox.testing14.blocks.ModBlocks;
 import com.avrisnox.testing14.blocks.TestBlock;
+import com.avrisnox.testing14.blocks.TestBlockTile;
 import com.avrisnox.testing14.items.TestItem;
 import com.avrisnox.testing14.utils.ClientProxy;
 import com.avrisnox.testing14.utils.IProxy;
@@ -10,6 +11,7 @@ import com.avrisnox.testing14.utils.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
@@ -55,6 +57,11 @@ public class Testing14 {
 
             event.getRegistry().register(new TestItem());
             // TODO: Register items here
+        }
+
+        @SubscribeEvent
+        public static void onTileEntityRegistery(final RegistryEvent.Register<TileEntityType<?>> event) {
+            event.getRegistry().register(TileEntityType.Builder.create(TestBlockTile::new, ModBlocks.TEST_BLOCK).build(null).setRegistryName("testblock"));
         }
     }
 }
