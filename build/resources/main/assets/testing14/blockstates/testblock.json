@@ -1,10 +1,16 @@
 {
     "variants": {
-        "facing=north": { "model": "testing14:block/testblock" },
-        "facing=south": { "model": "testing14:block/testblock", "y": 180},
-        "facing=west": { "model": "testing14:block/testblock", "y": 270},
-        "facing=east": { "model": "testing14:block/testblock", "y": 90},
-        "facing=up": { "model": "testing14:block/testblock", "x": -90},
-        "facing=down": { "model": "testing14:block/testblock", "x": 90}
+        "facing=north,powered=false": { "model": "testing14:block/testblock" },
+        "facing=south,powered=false": { "model": "testing14:block/testblock", "y": 180},
+        "facing=west,powered=false": { "model": "testing14:block/testblock", "y": 270},
+        "facing=east,powered=false": { "model": "testing14:block/testblock", "y": 90},
+        "facing=up,powered=false": { "model": "testing14:block/testblock", "x": -90},
+        "facing=down,powered=false": { "model": "testing14:block/testblock", "x": 90},
+        "facing=north,powered=true": { "model": "testing14:block/testblock_powered" },
+        "facing=south,powered=true": { "model": "testing14:block/testblock_powered", "y": 180},
+        "facing=west,powered=true": { "model": "testing14:block/testblock_powered", "y": 270},
+        "facing=east,powered=true": { "model": "testing14:block/testblock_powered", "y": 90},
+        "facing=up,powered=true": { "model": "testing14:block/testblock_powered", "x": -90},
+        "facing=down,powered=true": { "model": "testing14:block/testblock_powered", "x": 90}
     }
 }

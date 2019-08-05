@@ -1,0 +1,19 @@
+
+#Power settings
+[power]
+
+	#TestBlock settings
+	[power.testblock]
+		#Maximum power output per tick for testblock
+		#Range: > 0
+		maxOutput = 100
+		#Ticks per nether star
+		#Range: > 0
+		ticks = 20
+		#Per nether star power for testblock
+		#Range: > 0
+		genPower = 1000
+		#Maximum power for testblock
+		#Range: > 0
+		maxPower = 100000
+
